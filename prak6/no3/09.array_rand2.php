@@ -1,6 +1,6 @@
 <?php
   $siswa = array("andi", "gina", "joko", "santi", "rini", "rika", "joy");
-  $key_siswa = array_rand($siswa,2);
+  $key_siswa = array_rand($siswa,);
 
   print_r($key_siswa);
 

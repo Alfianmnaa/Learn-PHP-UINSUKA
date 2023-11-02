@@ -3,7 +3,6 @@ include_once("config.php"); // include database connection file
 
 if(isset($_POST['update'])) // Check if form is submitted for user update, then redirect to homepage after update
 {
-
     $id = $_POST['id'];
     $name=$_POST['name'];
     $mobile=$_POST['mobile'];
@@ -19,17 +18,16 @@ if(isset($_POST['update'])) // Check if form is submitted for user update, then 
 // Display selected user data based on id
 // Getting id from url
 $id= $_GET['id'];
-// Fetech user data based on id
+// Fetch user data based on id
 $result = mysqli_query($mysqli, "SELECT * FROM users WHERE id=$id");
 
 while($user_data = mysqli_fetch_array($result))
 {
-
     $name = $user_data['name'];
     $email = $user_data['email'];
     $mobile = $user_data['mobile'];
 }
-?>>
+?>
 <html>
 <head>
     <title>Edit User Data</title>

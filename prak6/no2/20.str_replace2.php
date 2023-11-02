@@ -4,7 +4,7 @@
   $ganti = "CSS";
   $hasil = 0;
    
-  echo str_replace($cari,$ganti,$kalimat,$hasil);
+  echo str_replace($cari,$ganti,$kalimat,$hasil); // hasil adalah jumlah kata yang diganti
 
   echo "<br>";
   echo $hasil;

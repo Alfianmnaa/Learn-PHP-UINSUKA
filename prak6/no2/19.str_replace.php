@@ -3,4 +3,4 @@
   $cari = "PHP";
   $ganti = "CSS";
    
-  echo str_replace($cari,$ganti,$kalimat);
+  echo str_replace($cari,$ganti,$kalimat); // PHP diganti CSS

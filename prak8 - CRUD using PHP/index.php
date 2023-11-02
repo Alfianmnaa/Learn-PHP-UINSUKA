@@ -2,6 +2,7 @@
 include_once("config.php"); // Create database connection using config file
 
 $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id Desc");
+// Ambil semua data dari tabel 'users' dan urutkan data tersebut berdasarkan kolom 'id' secara menurun.
 ?>
 <html lang="en">
 <head>

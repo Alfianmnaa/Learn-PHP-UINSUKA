@@ -4,7 +4,7 @@
     return $hasil;
 }
 
-$a = tambah(6,10);
-$b = tambah($a,9);
+$a = tambah(6,10); //16
+$b = tambah($a,9);  //25
 
 echo $b;

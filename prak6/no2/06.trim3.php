@@ -1,5 +1,5 @@
 <?php
-  $username="admin";
+  $username="admin ";
 
   if (trim($username) == "admin") {
     echo "Selamat datang admin";
