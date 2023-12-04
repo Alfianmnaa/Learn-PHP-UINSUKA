@@ -1,0 +1,20 @@
+CREATE TABLE `tb_barang` (
+ `id_barang` int(11) NOT NULL,
+ `nama_barang` varchar(255) NOT NULL,
+ `stok` int(11) NOT NULL,
+ `harga_beli` int(11) NOT NULL,
+ `harga_jual` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `tb_barang` (`id_barang`, `nama_barang`, `stok`, `harga_beli`,
+`harga_jual`) VALUES
+(1, 'Xiaomi Redmi Note 7', 10, 1999000, 2200000),
+(2, 'Samsung M20', 7, 2520000, 2700000),
+(4, 'Redmi Note 6', 20, 2200000, 2500000);
+
+ALTER TABLE `tb_barang`
+ ADD PRIMARY KEY (`id_barang`);
+
+ALTER TABLE `tb_barang`
+ MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
